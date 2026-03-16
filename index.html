@@ -198,7 +198,7 @@
 
 var map=L.map('map',{center:[25.35,51.18],zoom:10,zoomControl:false,attributionControl:false,scrollWheelZoom:true});
 var tileDark =L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:20,detectRetina:true});
-var tileLight=L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:20,detectRetina:true});
+var tileLight=L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:20,detectRetina:true});
 tileDark.addTo(map);
 var isDark=true;
 L.control.scale({position:'bottomright',imperial:false}).addTo(map);
