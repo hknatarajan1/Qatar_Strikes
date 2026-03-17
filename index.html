@@ -30,25 +30,25 @@
     --filterbar-bg:rgba(8,14,22,0.98);
   }
   html[data-theme="light"]{
-    --navy:#f4f6f9;--red:#c0271a;--red-lt:#c0271a;
-    --mil-lt:#1455a0;--energy-lt:#7a5200;--port-lt:#0a7060;
-    --city-lt:#2a3a5a;--diplo-lt:#6020a0;--air-lt:#a020a0;
-    --infra-lt:#0a7840;
-    --white:#1a2030;--offwhite:#2a3040;--muted:#5a6878;
-    --border:rgba(0,0,0,0.10);
-    --panel-bg:rgba(255,255,255,0.98);
-    --map-bg:#d8dde8;
-    --grid-line:rgba(0,0,0,0.015);
-    --popup-border:rgba(0,0,0,0.14);
-    --popup-shadow:rgba(0,0,0,0.18);
-    --p-title-border:rgba(0,0,0,0.10);
-    --p-date-col:#6a8aaa;
-    --label-col:rgba(20,30,50,0.85);
-    --label-bg:rgba(255,255,255,0.90);
-    --label-border:rgba(0,0,0,0.12);
-    --legend-section-col:#7a8a9a;
+    --navy:#f8f9fb;--red:#c0271a;--red-lt:#c0271a;
+    --mil-lt:#1050a0;--energy-lt:#6a4800;--port-lt:#0a6858;
+    --city-lt:#1e2c44;--diplo-lt:#580fa0;--air-lt:#980898;
+    --infra-lt:#0a6e38;
+    --white:#12181e;--offwhite:#222c38;--muted:#4a5868;
+    --border:rgba(0,0,0,0.09);
+    --panel-bg:rgba(252,253,255,0.98);
+    --map-bg:#eef0f4;
+    --grid-line:rgba(0,0,0,0.012);
+    --popup-border:rgba(0,0,0,0.13);
+    --popup-shadow:rgba(0,0,0,0.14);
+    --p-title-border:rgba(0,0,0,0.09);
+    --p-date-col:#5a7a9a;
+    --label-col:rgba(18,26,44,0.82);
+    --label-bg:rgba(252,253,255,0.92);
+    --label-border:rgba(0,0,0,0.11);
+    --legend-section-col:#6a7a8a;
     --header-bg:#0c1420;
-    --filterbar-bg:#e6e9ef;
+    --filterbar-bg:#eaecf1;
   }
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
   html,body{width:100vw;height:100vh;overflow:hidden;font-family:'Barlow',sans-serif;background:var(--navy);}
@@ -119,6 +119,13 @@
   .strike-badge{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:8px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;background:rgba(255,50,20,0.18);border:1px solid rgba(255,50,20,0.45);color:#ff6644;padding:1px 6px;border-radius:1px;margin-bottom:5px;}
   .map-label{font-family:'Barlow Condensed',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--label-col);background:var(--label-bg);border:1px solid var(--label-border);padding:2px 7px;white-space:nowrap;pointer-events:none;line-height:1.6;}
 
+  /* Positron light mode — soften icon glows, darken popup text */
+  html[data-theme="light"] .leaflet-popup-content{color:var(--offwhite);}
+  html[data-theme="light"] .p-body{color:var(--muted);}
+  html[data-theme="light"] .p-body b{color:var(--offwhite);}
+  html[data-theme="light"] .leg-label{color:var(--white);}
+  html[data-theme="light"] .fb-btn{color:var(--muted);border-color:rgba(0,0,0,0.14);}
+  html[data-theme="light"] .fb-btn.fb-all.active{color:var(--white);}
 
 </style>
 </head>
